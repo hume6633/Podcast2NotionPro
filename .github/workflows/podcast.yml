@@ -3,7 +3,7 @@ name: podcast sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 */2 * *"  # every 4 days
+    - cron: "0 0 */2 * *"  # every 2 days
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
